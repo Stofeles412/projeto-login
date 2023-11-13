@@ -1,12 +1,9 @@
 @charset "UTF-8";
-*{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(255, 255, 255);
-    text-transform: capitalize;
-    font-weight: bold;
+
+@media  screen and (min-width: 700px){
+
 }
+
 body{
     background-image: linear-gradient(to right, rgb(34, 34, 34), rgba(52, 52, 53, 0.434));
 }
@@ -20,9 +17,9 @@ h1{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 80vh;
-    margin: auto;
+    width: 100%;
     border-radius: 10px;
+    
     
     
     
@@ -32,36 +29,27 @@ input{
    border-radius: 20px;
   padding: 5px;
   background-color: rgb(66, 66, 66);
+  margin-left: 10px;
  
 }
 #formulario{
-    text-align: center;
-    padding: 20px;
-    padding: 20px;
-    
-    
-}
-section#login{ 
-}
-
-    
-#butaoreset{ margin-left: 50px;
-    width: 70px;
-}
-#butaoapagar{
-    width: 70px;
-}
-
-#ipe{
-    padding: 100px;
+    width: 100vw;
    
+    
+    
+}
+section#login{ display: inline-block;
+  
+}
+#ipe{ margin: 10px;
+    padding: 100px;
    
     
     
 
     }
     input:hover{
-        background-color: rgba(52, 52, 52, 0.737);
-        color: rgb(145, 55, 10);
+        background-color: rgb(52, 52, 52);
+        color: rgb(61, 61, 61);
     }
-    
+     
