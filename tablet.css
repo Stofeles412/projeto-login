@@ -53,4 +53,7 @@ section#login{ display: inline-block;
         background-color: rgb(52, 52, 52);
         color: rgb(61, 61, 61);
     }
+    form#butaoentar{
+        background-color: black;
+    }
    
