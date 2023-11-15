@@ -7,6 +7,10 @@
     text-transform: capitalize;
     font-weight: bold;
 }
+:root{
+    --cor1: red;
+    --cor:2 blue;
+}
 body{
     background-image: linear-gradient(to right, rgb(34, 34, 34), rgba(52, 52, 53, 0.434));
 }
@@ -31,8 +35,7 @@ input{
    height: 35px;
    border-radius: 20px;
   padding: 5px;
-  background-color: rgb(66, 66, 66);
- 
+ background-color:  rgb(66, 66, 66);
 }
 #formulario{
     text-align: center;
@@ -65,7 +68,7 @@ section#login{
         background-color: rgba(52, 52, 52, 0.737);
         color: rgb(145, 55, 10);
     }
-    #tudo{
-        margin: auto;
-    }
-   
+    
+   #video{
+    max-width: 500px;
+   }
