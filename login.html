@@ -21,7 +21,7 @@
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Crie sua conta, ou faça o login para entrar, caso já tenha uma conta.</p>
-                <form action="login.php" method="post" name="form" id="ilogin">
+                <form action="login.php" method="post" name="form">
                     <div id="formulario">
                         <label id="ilogin">email:</label>
                         <input type="email" id="ilogin" placeholder="seu e-mail" minlength="10" maxlength="15" required>
@@ -36,7 +36,7 @@
     
                     <footer id="ipe">
                         <label id="butao1">
-                            <input type="submit" value="Entar" id="butaoaentrar">
+                            <input type="submit" value="Entrar" id="butaoaentrar" onclick="enviarDados()">
                            
                         </label>
                         
@@ -59,4 +59,16 @@
         
     
 </body>
+<script>
+    function enviarDados(){
+        var login = window.document.getElementById ('ilogin')
+        var senha = window.document.getElementById ('isenha')
+        var botao = window.document.getElementById('butaoaentrar')
+        if(login.value <= 0){
+            window.alert ('insira seu email')
+        }else{
+            window.alert ('seus dados foram envidos com sucesso')
+        }
+    }
+</script>
 </html>
