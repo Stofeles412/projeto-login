@@ -8,7 +8,7 @@
         }
         nav{
             color: white;
-            background-color: black;
+          background-image: linear-gradient(to right, rgb(57, 54, 54), rgb(105, 105, 105));
             padding: 5px;
             height: 100px;
             text-align: center;
@@ -16,7 +16,7 @@
             box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.457);
         }
         main{
-            background-color: rgb(249, 230, 206);
+            background-color: rgb(245, 240, 234);
             border-radius: 5px;
             padding: 30px;
             border: solid 1px black;
@@ -46,8 +46,22 @@
         a:hover{
             color: white;
             background-color: black;
+            transition: .3s;
         }
-        
+        #itens{
+            display: flex;
+            list-style-type: none;
+            gap: 20px;
+            display: none;
+            padding: 10px;
+            
+        }
+        #botao{
+            border: 0;
+            background-color: transparent;
+            cursor: pointer;
+       
+        }
           
         
         
@@ -59,7 +73,21 @@
 <body>
   <nav>
     <h1>seja bem vindo</h1>
+    
+     
+    
   </nav>
+  <button id="botao">
+   <input type="button" value="abrir" onclick="openMenu()">
+  </button>
+  <menu>
+    <ul id="itens">
+        <li><a href="#">sobre</a></li>
+        <li><a href="#">sobre</a></li>
+        <li><a href="#">contato</a></li>
+    </ul>
+
+  </menu>
   <main>
     <h2>ola amigos</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum beatae velit recusandae earum asperiores perferendis maiores ex ut nobis quas provident culpa repellendus explicabo iure, laboriosam molestiae. Dolorum, optio dolores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque sunt ab architecto quae laudantium ex natus obcaecati temporibus fuga ipsum cum numquam cupiditate assumenda facere tempora odit maiores, consequatur voluptatum.</p>
@@ -77,6 +105,16 @@
     
     </ul>
   </footer>
+  <script>
+    function openMenu(){
+        var abrir = window.document.getElementById("itens")
+        if (abrir.style.display == 'none'){
+            abrir.style.display ='flex'
+        }else{
+            abrir.style.display = 'none'
+        }
+    }
+  </script>
     
 </body>
 </html>
