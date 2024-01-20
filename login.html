@@ -65,9 +65,16 @@
         var senha = window.document.getElementById ('isenha')
         var botao = window.document.getElementById('butaoaentrar')
         if(login.value <= 0){
-            window.alert ('insira seu email')
-        }else{
             window.alert ('seus dados foram envidos com sucesso')
+           
+        }else{
+            window.alert ('insira seu email')
+           
+        }
+        if(senha.value <=0){
+            window.alert('insira uma senha !')
+        }else{
+            window.alert ('seus dados foram enviados')
         }
     }
 </script>
