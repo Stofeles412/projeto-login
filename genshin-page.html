@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+           
+        }
+        nav{
+            display: flex;
+            background-color: rgb(72, 72, 71);
+        }
+        ul,li{
+            list-style-type: none;
+            display: flex;
+            gap: 400px;
+            text-align: center;
+           
+            
+        }
+        #itens{
+            font-size: 1.4em;
+            font-weight: bold;
+        }
+        a{
+           text-decoration: none;
+           color: white;
+          
+        }
+        a:hover{
+            background-color: rgba(96, 96, 96, 0.6);
+            color: black;
+            text-decoration: underline;
+            transition: .4s;
+        }
+        #conteudo{
+            background-image: linear-gradient(to right, rgb(85, 80, 80),black);
+            background-repeat: no-repeat;
+           background-size: 100%;
+           height: 500px;
+           color: aliceblue;
+           box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.224);
+          
+         
+          
+        }
+         h1{
+            background-color: rgba(0, 0, 0, 0.373);
+            border-radius: 10px;
+            padding: 20px;
+            display: inline-block;
+            margin-top: 10px ;
+          
+            
+        }
+        form{
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.376);
+            display: inline-block;
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 20px;
+            width: 70%;
+            
+        }
+        input{
+            height: 30px;
+            border-radius: 5px;
+            margin-top: 50px;
+            padding: 5px;
+            border: 0;
+            background-color: antiquewhite;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.676);
+        }
+        .personagens{
+            width: 250px;
+        }
+        #personagens-img{ display: flex;
+            background-color: rgba(255, 255, 255, 0.521);
+            color: rgb(0, 0, 0);
+           
+
+        }
+        article{
+            background-color: black;
+            margin-top: 30px;
+           
+           
+        }
+        #pe-itens{
+            text-align: center;
+        }
+        
+        @media screen and (max-width: 1150px){
+            form{   position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 40%;
+                margin-top: 90px;
+              
+               
+             
+                
+            }
+            .personagens{
+                width: 130px;
+              margin: auto;
+            }
+            #itens{
+                display: flex;
+                margin: auto;
+            }
+              
+            
+        }
+
+
+        @media screen and (max-width: 900px){
+            .personagens{
+                width: 90px;
+            }
+            form{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                margin-top: 60px;
+               
+                padding: 20px;
+
+            }
+            #itens{
+                display: flex;
+                gap: 70px;
+            }
+            h1{
+                margin-top: 10px;
+            }
+            
+              
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>genshin-page</title>
+</head>
+<body>
+    <nav>
+       
+        <ul id="itens">
+          
+            <li><a href="#">mais jogos</a></li>
+            <li><a href="#">sobre</a></li>
+            <li><a href="#">contato</a></li>
+        </ul>
+    </nav>
+    <main id="conteudo">
+        <h1>um mundo repleto de aventuras</h1> <br> <br><br>
+       
+        <form action="cadastro.php" method="get">
+            <h2>login</h2>
+           
+            <input type="text" placeholder="nome:"> <br><br>
+            <input type="password" placeholder="senha"><br><br>
+            <input type="button" value="entrar">
+           
+        </form>
+       
+
+    </main>
+    <article id="personagens-img">
+        <img src="imagens/personagem-1.jpg" alt="jean" class="personagens"><br><br>
+        <p>jean, uma exzelente lutadora</p>
+        <img src="imagens/personagem-2.jpg" alt="xiaquiyu" class="personagens">
+        <p>uma exelente maga</p>
+        <img src="imagens/personagem-3.webp" alt="ganyu" class="personagens">
+        <p>uma exelente atiradora</p>
+        
+        
+    </article>
+    <footer>
+        <p>criado por fernando stofeles</p> 
+        <ul id="pe-itens">
+            <li><a href="#">guithub</a></li>
+            <li><a href="#">instgaran</a></li>
+            <li><a href="#">facebook</a></li>
+        </ul>
+    </footer>
+    
+</body>
+</html>
