@@ -8,6 +8,13 @@
             padding: 0;
            
         }
+        body{
+          background-color: rgb(255, 255, 255);
+            background-repeat: no-repeat;
+            background-size: cover;
+          
+
+        }
         nav{
             display: flex;
             background-color: rgb(72, 72, 71);
@@ -36,10 +43,10 @@
             transition: .4s;
         }
         #conteudo{
-            background-image: linear-gradient(to right, rgb(85, 80, 80),black);
+          background-image: linear-gradient(to right, rgba(0, 0, 0, 0.784), rgba(0, 0, 0, 0.803));
             background-repeat: no-repeat;
            background-size: 100%;
-           height: 500px;
+           min-height: 550px;
            color: aliceblue;
            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.224);
           
@@ -51,7 +58,7 @@
             border-radius: 10px;
             padding: 20px;
             display: inline-block;
-            margin-top: 10px ;
+            margin-top: 10px;
           
             
         }
@@ -63,6 +70,8 @@
             padding: 10px;
             margin-top: 20px;
             width: 70%;
+        
+           
             
         }
         input{
@@ -71,26 +80,35 @@
             margin-top: 50px;
             padding: 5px;
             border: 0;
-            background-color: antiquewhite;
+            background-color: rgb(137, 211, 205);
             box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.676);
+            font-weight: bold;
+            text-transform: capitalize;
         }
         .personagens{
             width: 250px;
+            
         }
         #personagens-img{ display: flex;
             background-color: rgba(255, 255, 255, 0.521);
             color: rgb(0, 0, 0);
            
+           
 
         }
         article{
             background-color: black;
-            margin-top: 30px;
+           margin-top: 30px;
            
            
         }
         #pe-itens{
             text-align: center;
+            font-size: 1.4em;
+            text-transform: uppercase;
+           
+            
+            
         }
         
         @media screen and (max-width: 1150px){
@@ -111,7 +129,10 @@
             }
             #itens{
                 display: flex;
-                margin: auto;
+               
+            }
+            #conteudo{
+                width: 100%;
             }
               
             
@@ -163,8 +184,8 @@
         <form action="cadastro.php" method="get">
             <h2>login</h2>
            
-            <input type="text" placeholder="nome:"> <br><br>
-            <input type="password" placeholder="senha"><br><br>
+            <input type="text" placeholder="nome:" required> <br><br>
+            <input type="password" placeholder="senha" required><br><br>
             <input type="button" value="entrar">
            
         </form>
@@ -182,12 +203,13 @@
         
     </article>
     <footer>
-        <p>criado por fernando stofeles</p> 
+      
         <ul id="pe-itens">
-            <li><a href="#">guithub</a></li>
+          <li><a href="#">guithub</a></li>
             <li><a href="#">instgaran</a></li>
             <li><a href="#">facebook</a></li>
         </ul>
+      <p>  &copy;criado por fernando stofeles</p>
     </footer>
     
 </body>
