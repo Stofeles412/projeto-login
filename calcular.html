@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+</head>
+<body>
+    <form action="get">
+        numero:<input type="number" id="numero-1"> <br><br>
+        numero:<input type="number"  id="numero-2"><br><br>
+        <input type="button" value="calucular" onclick="botaoCalcular()">
+        <div id="res">
+
+        </div>
+    </form>
+    <script>
+      var n1 = window.prompt(Number('digite um numero'))
+      var n2 = window.prompt(Number('digite outro numero'))
+      var res = n1 + n2
+      window.alert (`o calculo é = a ${res}`)
+    
+    </script>
+</body>
+</html>
+function botaoCalcular(){
+    var n1 = Number.window.document.getElementById('numero-1')
+
+    var n2 = window.document.getElementById('numero-2'))
+
+   var resposta = window.document.getElementById = ('res')
+
+ resposta = n1 + n2
+ window.alert (`${resposta}`)
+    
+}
