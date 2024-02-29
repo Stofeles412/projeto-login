@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            
+            color: azure;
+        }
+        nav{
+            background-color: rgb(51, 48, 48);
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.55);
+        }
+        #imagem{
+            width: 500px;
+            margin-left: 800px;
+            margin-top: -400px;
+        }
+        #itens{
+            display: flex;
+            list-style-type: none;
+            font-weight: bold;
+          
+            
+           
+        }
+        .h-line{
+            margin: 30px;
+            
+        }
+        a{
+            color: aliceblue;
+            text-decoration: none;
+            font-size: 1.5em;
+            text-transform: capitalize;
+            
+        }
+        a:hover{
+            color: rgb(8, 95, 121);
+            transition: .3;
+        }
+        input{
+            border-radius: 30px;
+            height: 30px;
+          
+        }
+        main{
+            text-align: center;
+            background-color: rgb(61, 124, 124);
+            height: 300px;
+            border-radius: 200px;
+            padding: 40px;
+        }
+        .btn{
+            padding: 10px;
+            background-color: rgb(1, 104, 104);
+            font-weight: bold;
+            border: 0;
+            text-transform: uppercase;
+            color: black;
+            cursor: pointer;
+        }
+        .caixa{
+            padding: 10px;
+            background-color: rgb(2, 32, 22);
+            border: 0;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>genshin-page</title>
+</head>
+<body>
+    <nav>
+        <menu>
+            <ul id="itens">
+                <li class="h-line"><a href="#">jogos</a></li>
+                <li class="h-line"><a href="#">download</a></li>
+                <li class="h-line"><a href="#">personagens</a></li>
+                <li class="h-line"><a href="#">criar conta</a></li>
+            </ul>
+        </menu>
+    </nav>
+    <h1>jogue agora</h1>
+    <main>
+        
+        <input type="email" placeholder="email..." class="caixa"><br><br>
+        <input type="text" placeholder="nome..." class="caixa"><br><br>
+        <input type="password" placeholder="senha..." class="caixa"><br><br>
+
+        <input type="button" value="entrar" class="btn"><br><br>
+        <input type="button" value="esqueci senha" class="btn">
+    </main>
+    <img src="imagens/personagem-1.jpg" alt="jean" id="imagem">
+  
+    
+</body>
+</html>
