@@ -9,16 +9,17 @@
         }
         body{
             
-            color: azure;
+            color: rgb(0, 0, 0);
         }
         nav{
             background-color: rgb(51, 48, 48);
             box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.55);
         }
         #imagem{
-            width: 500px;
-            margin-left: 800px;
-            margin-top: -400px;
+            width: 400px;
+            margin-left: 700px;
+            margin-top: -600px;
+            padding: 30px;
         }
         #itens{
             display: flex;
@@ -50,14 +51,13 @@
         }
         main{
             text-align: center;
-            background-color: rgb(61, 124, 124);
-            height: 300px;
-            border-radius: 200px;
+            background-color: rgb(38, 41, 41);
+            height: 500px;
             padding: 40px;
         }
         .btn{
             padding: 10px;
-            background-color: rgb(1, 104, 104);
+            background-color: rgb(26, 149, 186);
             font-weight: bold;
             border: 0;
             text-transform: uppercase;
@@ -66,8 +66,13 @@
         }
         .caixa{
             padding: 10px;
-            background-color: rgb(2, 32, 22);
+            background-color: rgb(142, 230, 252);
             border: 0;
+        }
+        h1, h2{
+            color: rgb(53, 142, 220);
+            line-height: 70px;
+            text-transform: uppercase;
         }
     </style>
     <meta charset="UTF-8">
@@ -85,8 +90,10 @@
             </ul>
         </menu>
     </nav>
-    <h1>jogue agora</h1>
     <main>
+        <h1>jogue agora</h1>
+        <h2>e embarque em um mundo repleto de aventuras</h2>
+  
         
         <input type="email" placeholder="email..." class="caixa"><br><br>
         <input type="text" placeholder="nome..." class="caixa"><br><br>
@@ -94,9 +101,10 @@
 
         <input type="button" value="entrar" class="btn"><br><br>
         <input type="button" value="esqueci senha" class="btn">
+
+        <img src="imagens/personagem-1-removebg-preview.png" alt="jean" id="imagem">
     </main>
-    <img src="imagens/personagem-1.jpg" alt="jean" id="imagem">
-  
+   
     
 </body>
 </html>
