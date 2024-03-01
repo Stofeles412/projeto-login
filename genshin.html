@@ -96,6 +96,13 @@
                 display: none;
                 text-align: center;
             }
+            #menu-icone, button{
+                width: 30px;
+                background-color: transparent;
+                border: none;
+                padding: 10px;
+              
+            }
         }
     </style>
     <meta charset="UTF-8">
@@ -106,7 +113,7 @@
     <nav>
         <menu>
             <button>
-                <img src="imagens/" alt="">
+                <img src="imagens/menu.png" alt="menu" id="menu-icone" onclick="openMenu()">
             </button>
             <ul id="itens">
                 <li class="h-line"><a href="#">jogos</a></li>
@@ -122,6 +129,7 @@
         <h2>e embarque em um mundo repleto de aventuras</h2>
 
         <img src="imagens/personagem-1-removebg-preview.png" alt="jean" id="imagem">
+      
   
         
         <input type="email" placeholder="email..." class="caixa"><br><br>
@@ -133,6 +141,18 @@
 
       
     </main>
+    <script>
+        function openMenu(){
+            var menu = window.document.getElementById('itens')
+            var icone = window.document.getElementById('menu-icone')
+            if(menu.style.display == 'none'){
+                menu.style.display = 'block'
+                icone.src = 'imagens/menu.png'
+            }else{
+                menu.style.display = 'none'
+            }
+        }
+    </script>
    
     
 </body>
