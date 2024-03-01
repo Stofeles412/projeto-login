@@ -77,17 +77,24 @@
             text-transform: uppercase;
         }
 
-        @media screen and (min-width: 600px){
+        @media screen and (max-width: 600px){
             body{
 
             }
-            #imagem{
+            #imagem{ margin-left: 250px;
+                margin-bottom: 180px;
+                width: 250px;
+                
                 
             
             }
             main{
                 
                 
+            }
+            #itens{
+                display: none;
+                text-align: center;
             }
         }
     </style>
@@ -98,6 +105,9 @@
 <body>
     <nav>
         <menu>
+            <button>
+                <img src="imagens/" alt="">
+            </button>
             <ul id="itens">
                 <li class="h-line"><a href="#">jogos</a></li>
                 <li class="h-line"><a href="#">download</a></li>
