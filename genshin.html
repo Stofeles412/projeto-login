@@ -47,15 +47,32 @@
             transition: .3;
             text-decoration: underline;
         }
-        input{
-            border-radius: 30px;
-            height: 30px;
+       
           
+
+        section{
+            padding: 10%;
+            display: flex;
+        }
+        img{
+            width: 40%;
+        }
+        #seçao-1{
+           flex-direction: row;
+        }
+        #seçao-2{
+            flex-direction: row-reverse;
+        }
+        #seçao-3{
+            flex-direction: row;
+        }
+        #seçao-4{
+            flex-direction: row-reverse;
         }
         main{
+            display: flex;
             text-align: center;
             background-color: rgb(38, 41, 41);
-            height: 500px;
             padding: 40px;
             margin-top:  200px;
         }
@@ -123,7 +140,7 @@
 </head>
 <body>
     <nav>
-        <menu>
+        <menu id="nav-bar">
             <button>
                 <img src="imagens/menu.png" alt="menu" id="menu-icone" onclick="openMenu()">
             </button>
@@ -135,27 +152,29 @@
             </ul>
         </menu>
     </nav>
-    <main>
-       
-      
-        <h1>jogue agora</h1>
-        <h2>e embarque em um mundo repleto de aventuras</h2>
+   <section id="seçao-1">
+    <img src="./imagens/personagem-1-removebg-preview.png" alt="" class="seçao-img1">
 
-        <img src="imagens/personagem-1-removebg-preview.png" alt="jean" id="imagem">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, quibusdam. Deserunt distinctio tempora, animi velit unde voluptatum, incidunt asperiores odit nostrum dolorum voluptate nam earum quasi at tempore illum eaque.</p>
+   </section>
 
-       
-      
-  
-        
-        <input type="email" placeholder="email..." class="caixa"><br><br>
-        <input type="text" placeholder="nome..." class="caixa"><br><br>
-        <input type="password" placeholder="senha..." class="caixa"><br><br>
+   <section id="seçao-2">
+    <img src="./imagens/personagem-2.jpg" alt="" class="seçao-img2">
 
-        <input type="button" value="entrar" class="btn"><br><br>
-        <input type="button" value="esqueci senha" class="btn">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, quibusdam. Deserunt distinctio tempora, animi velit unde voluptatum, incidunt asperiores odit nostrum dolorum voluptate nam earum quasi at tempore illum eaque.</p>
+   </section>
 
-      
-    </main>
+   <section id="seçao-3">
+    <img src="./imagens/personagem-3.webp" alt="" class="seçao-img3">
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, quibusdam. Deserunt distinctio tempora, animi velit unde voluptatum, incidunt asperiores odit nostrum dolorum voluptate nam earum quasi at tempore illum eaque.</p>
+   </section>
+
+   <section id="seçao-4">
+    <img src="./imagens/personagem-1-removebg-preview.png" alt="" class="seçao-img4">
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, quibusdam. Deserunt distinctio tempora, animi velit unde voluptatum, incidunt asperiores odit nostrum dolorum voluptate nam earum quasi at tempore illum eaque.</p>
+   </section>
     <script>
         function openMenu(){
             var menu = window.document.getElementById('itens')
