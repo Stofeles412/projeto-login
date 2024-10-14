@@ -48,13 +48,19 @@
             text-decoration: underline;
         }
        
-          
+          p{
+            color: rgb(9, 108, 0);
+            font-weight: bold;
+            font-size: 2em;
+          }
 
         section{
+            background-color: rgb(255, 255, 255);
             padding: 10%;
             display: flex;
         }
         img{
+            
             width: 40%;
         }
         #seçao-1{
@@ -152,30 +158,37 @@
             </ul>
         </menu>
     </nav>
-   <section id="seçao-1">
+   <section id="seçao-1" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
     <img src="./imagens/personagem-1-removebg-preview.png" alt="" class="seçao-img1">
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, quibusdam. Deserunt distinctio tempora, animi velit unde voluptatum, incidunt asperiores odit nostrum dolorum voluptate nam earum quasi at tempore illum eaque.</p>
+    <p>Jean: Cavaleira Grande de Mondstadt, dedicada e séria, com um forte senso de dever e lealdade ao povo de sua cidade.</p>
    </section>
 
-   <section id="seçao-2">
+   <section id="seçao-2" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="300">
+    
     <img src="./imagens/personagem-2.jpg" alt="" class="seçao-img2">
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, quibusdam. Deserunt distinctio tempora, animi velit unde voluptatum, incidunt asperiores odit nostrum dolorum voluptate nam earum quasi at tempore illum eaque.</p>
+    <p>Xiangling: Chefe do restaurante "Chili do Bolo de Carne" em Liyue, uma chef talentosa e entusiasta da culinária que adora experimentar com novos sabores.</p>
    </section>
 
-   <section id="seçao-3">
+
+   <section id="seçao-3" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
     <img src="./imagens/personagem-3.webp" alt="" class="seçao-img3">
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, quibusdam. Deserunt distinctio tempora, animi velit unde voluptatum, incidunt asperiores odit nostrum dolorum voluptate nam earum quasi at tempore illum eaque.</p>
+    <p>Ganyu: Meio humana, meio adepti, serve como secretária da Comissão de Comércio de Liyue, com um caráter gentil e devotado, mas marcada pela luta interna entre suas origens humanas e divinas.</p>
    </section>
 
-   <section id="seçao-4">
-    <img src="./imagens/personagem-1-removebg-preview.png" alt="" class="seçao-img4">
+   <section id="seçao-4" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+    <img src="./imagens/tartaglia_genshin_impact_portrait_render_by_deg5270_deeqr58-fullview.png" alt="" class="seçao-img4">
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, quibusdam. Deserunt distinctio tempora, animi velit unde voluptatum, incidunt asperiores odit nostrum dolorum voluptate nam earum quasi at tempore illum eaque.</p>
+    <p>artaglia (Childe): Um dos Fatui, com uma personalidade ambiciosa e volátil. Apesar de seu comportamento impetuoso, é um estrategista habilidoso e adora lutar.</p>
    </section>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+
     <script>
+        AOS.init();
         function openMenu(){
             var menu = window.document.getElementById('itens')
             var icone = window.document.getElementById('menu-icone')
@@ -189,6 +202,9 @@
                
             }
         }
+
+      
+
     </script>
    
     
